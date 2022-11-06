@@ -18,18 +18,15 @@ body {
 }
 
 .container {
-    display: flex;
-    width: 1200px;
+    width: 1230px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
     outline: 2px solid tomato;
 }
 
 /* Header */
-
-.site-logo {
-    color: #000000;
-}
 
 .site-nav .link:hover,
 .site-nav .link-focus  {
@@ -56,6 +53,7 @@ body {
     line-height: 1.19;
 /* identical to box height */
     letter-spacing: 0.03em;
+    color: #000000;
 }
 
 .logo-icon {
@@ -70,6 +68,7 @@ body {
     display: flex;
     text-decoration: none;
     font-family: 'Roboto';
+    margin-left: auto;
 }
 
 .site-nav .link:not(:last-child) {
@@ -88,6 +87,7 @@ body {
     letter-spacing: 0.02em;
     color: #212121;
     margin-right: 50px;
+    
 }
 
 
@@ -118,7 +118,6 @@ body {
 .button {
     display: inline-block;
     padding: 6px 22px;
-
     background: #F5F4FA;
     border-radius: 4px;
 }
@@ -144,13 +143,21 @@ body {
     border-radius: 4px;
     text-decoration: none;
     text-align: center;
-    margin-bottom: 200px;
 }
 
 .reset-portfolio {
-    display: block;
+    display: flex;
     margin-top: 0;
     margin-bottom: 0;
+    text-align: center;
+    margin-right: 8px;
+}
+
+.types-portfolio {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 ul {
@@ -166,12 +173,23 @@ ul {
 }
 /* Особливості */
 
-.text {
+.feature-list {
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.feature-list .item {
+    width: 300px;
+    background-color: tomato;
 }
 
 .team {
-margin-bottom: 0;
-margin-top: 0;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 0;
+    padding-top: 94px;
+
 }
 
 .page {
@@ -235,11 +253,12 @@ margin-top: 0;
 }
 
 .staff {  
-    padding-bottom: 0;
+    padding-bottom: 94px;
     margin-bottom: 0;
 }
 
 .card-bg {
+    margin-right: 30px;
     background: #FFFFFF;
     /* material shadow v1 */
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -255,8 +274,12 @@ margin-top: 0;
     color: #FFFFFF;
     margin-top: 0;
     margin-bottom: 40px;
-    padding-top: 200px;
     text-align: center;
+}
+
+.images-pic {
+    margin-right: 30px;
+    margin-bottom: 94px;
 }
 
 /* Чим ми займаємося */
@@ -268,24 +291,13 @@ margin-top: 0;
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: #212121;
-    margin-top: 0;margin-bottom: 0;
-}
-
-/* Image */
-.img-first {
-    mix-blend-mode: normal;
-}
-
-.img-second {
-}
-
-.img-third {
-}
-
-.conteiner {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 .staff-name {
+    text-align: center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -293,11 +305,12 @@ margin-top: 0;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #212121;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 30px;
+    margin-bottom: 9px;
 }
 
 .job-title {
+    text-align: center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -306,11 +319,12 @@ margin-top: 0;
     letter-spacing: 0.03em;
     color: #757575;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30;
     padding-bottom: 0;
 }
 
 .footer-logo {
+    padding-top: 60px;
     text-decoration: none;
     color: #FFFFFF;
     font-family: 'Raleway';
@@ -325,7 +339,10 @@ margin-top: 0;
 
 .footer {
     background: #2F303A;
-    margin-right: 0;
+}
+
+.footer-list {
+    padding-left: 0;
 }
 
 .address {
@@ -362,7 +379,8 @@ margin-top: 0;
     letter-spacing: 0.06em;
     color: #212121;
     margin-top: 0;
-    margin-bottom: 4px;
+    margin-bottom: 0;
+    padding-bottom: 4px;
 }
 
 .type-project {
