@@ -18,6 +18,7 @@ body {
 }
 
 .container {
+    display: flex;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -30,8 +31,14 @@ body {
     color: #000000;
 }
 
-.site-nav .link:hover  {
+.site-nav .link:hover,
+.site-nav .link-focus  {
     color: #2196F3;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
 }
 
 .header {
@@ -39,6 +46,9 @@ body {
 }
 
 .site-logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
     text-decoration: none;
     font-family: 'Raleway';
     font-weight: 700;
@@ -53,7 +63,7 @@ body {
 }
 
 .site-nav {
-    display: flex;;
+    display: flex;
 }
 
 .auth-nav {
@@ -62,11 +72,14 @@ body {
     font-family: 'Roboto';
 }
 
-.site-nav .link:last-child {
-    margin-right: 0;
+.site-nav .link:not(:last-child) {
+    margin-right: 50px;
 }
 
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -96,6 +109,10 @@ body {
 
 .auth-nav .contact-header:hover {
     color: #2196F3;
+}
+
+.auth-nav .contact-header + .contact-header {
+    margin-left: 50px;
 }
 
 .button {
@@ -142,6 +159,7 @@ ul {
 }
 
 .list {
+    display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
