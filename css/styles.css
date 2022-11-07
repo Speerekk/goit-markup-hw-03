@@ -33,13 +33,22 @@ body {
     color: #2196F3;
 }
 
+.header-nav {
+    display: flex;
+}
+
 .main-nav {
     display: flex;
     align-items: center;
 }
 
+.main {
+    margin-top: 94px;
+    padding-bottom: 94px;
+}
+
 .header {
-    background: #ccc;
+    background: #ffffff;
 }
 
 .site-logo {
@@ -62,18 +71,22 @@ body {
 
 .site-nav {
     display: flex;
+    margin-left: 93px;
 }
 
 .auth-nav {
     display: flex;
     text-decoration: none;
     font-family: 'Roboto';
+    margin-left: 344px;
     margin-left: auto;
+    gap: 50px;
 }
 
-.site-nav .link:not(:last-child) {
-    margin-right: 50px;
+.site-nav .link:not(last-child) {
+    margin-right: 50;
 }
+
 
 .site-nav .link {
     display: block;
@@ -86,9 +99,16 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
-    margin-right: 50px;
-    
 }
+
+.link {
+    margin-right: 50px; 
+}
+
+.studio {
+    margin-left: 93px;
+}
+
 
 
 
@@ -104,15 +124,11 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: #757575;  
 }
 
 .auth-nav .contact-header:hover {
     color: #2196F3;
-}
-
-.auth-nav .contact-header + .contact-header {
-    margin-left: 50px;
 }
 
 .button {
@@ -151,6 +167,14 @@ body {
     margin-bottom: 0;
     text-align: center;
     margin-right: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 8px;
+}
+
+.bg-portfolio {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
 }
 
 .types-portfolio {
@@ -158,6 +182,8 @@ body {
     margin-bottom: 0;
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
+    gap: 30px;
 }
 
 ul {
@@ -175,20 +201,32 @@ ul {
 
 .feature-list {
     display: flex;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .feature-list .item {
     width: 300px;
-    background-color: tomato;
+}
+
+.images {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.images-pic {
+    margin-right: 30px;
 }
 
 .team {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
     text-align: center;
-    margin-bottom: 50px;
-    margin-top: 0;
-    padding-top: 94px;
+    letter-spacing: 0.03em;
+    color: #212121;
 
 }
 
@@ -208,12 +246,25 @@ ul {
 .hero-top {
     text-align: center;
     background: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
     /* Section bg */
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+
+.section-pic {
+    padding-bottom: 94px;
+}
+
 .section-bg {
     background: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 /* Description */
@@ -252,11 +303,6 @@ ul {
     color: #212121;
 }
 
-.staff {  
-    padding-bottom: 94px;
-    margin-bottom: 0;
-}
-
 .card-bg {
     margin-right: 30px;
     background: #FFFFFF;
@@ -275,11 +321,7 @@ ul {
     margin-top: 0;
     margin-bottom: 40px;
     text-align: center;
-}
-
-.images-pic {
-    margin-right: 30px;
-    margin-bottom: 94px;
+    text-transform: uppercase;
 }
 
 /* Чим ми займаємося */
@@ -294,6 +336,15 @@ ul {
     margin-top: 0;
     margin-bottom: 50px;
     text-align: center;
+}
+
+.staff {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.any-project {
+    padding: 20px 24px;
 }
 
 .staff-name {
@@ -339,6 +390,8 @@ ul {
 
 .footer {
     background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-list {
@@ -378,9 +431,6 @@ ul {
     line-height: 2.00;
     letter-spacing: 0.06em;
     color: #212121;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 4px;
 }
 
 .type-project {
